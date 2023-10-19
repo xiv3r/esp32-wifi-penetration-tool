@@ -24,6 +24,12 @@ Obviously cracking is not part of this project, as ESP32 is not sufficient to cr
 
 [![Demonstration Youtube video](https://img.youtube.com/vi/9I3BxRu86GE/0.jpg)](https://www.youtube.com/watch?v=9I3BxRu86GE)
 
+#### Bruteforce with: [HCCAPX Bruteforce](https://github.com/xiv3r/esp32-wifi-penetration-tool/raw/master/HCCAPX%20Bruteforce.apk)
+
+https://github.com/xiv3r/esp32-wifi-penetration-tool/assets/117867334/717b7602-d552-4e01-9f23-acff19464ffd
+
+
+
 
 ## Usage
 
