@@ -50,6 +50,13 @@ idf.py build
 Legacy method using `make` is not supported by this project.
 
 ## Flash
+
+### Download:
+
+1. [`0x1000`](https://github.com/xiv3r/esp32-wifi-penetration-tool/raw/master/build/bootloader/bootloader.bin)
+2. [`0x8000`](https://github.com/xiv3r/esp32-wifi-penetration-tool/raw/master/build/partition_table/partition-table.bin)
+3. [`0x10000`](https://github.com/xiv3r/esp32-wifi-penetration-tool/raw/master/build/esp32-wifi-penetration-tool.bin)
+
 If you have setup ESP-IDF, the easiest way is to use `idf.py flash`.
 
 In case you don't want to setup whole ESP-IDF, you can use pre-build binaries included in [`build/`](build/) and flash them using [`esptool.py`](https://github.com/espressif/esptool) (requires Python).
