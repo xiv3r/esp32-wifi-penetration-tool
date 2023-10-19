@@ -1,8 +1,8 @@
-# ESP32 Wi-Fi Penetration Tool
+# <h1 align="center"> ESP32 Wi-Fi Penetration Tool</h1>
 
-This project introduces an universal tool for ESP32 platform for implementing various Wi-Fi attacks. It provides some common functionality that is commonly used in Wi-Fi attacks and makes implementing new attacks a bit simpler. It also includes Wi-Fi attacks itself like capturing PMKIDs from handshakes, or handshakes themselves by different methods like starting rogue duplicated AP or sending deauthentication frames directly, etc...
+<p align="center">This project introduces an universal tool for ESP32 platform for implementing various Wi-Fi attacks. It provides some common functionality that is commonly used in Wi-Fi attacks and makes implementing new attacks a bit simpler. It also includes Wi-Fi attacks itself like capturing PMKIDs from handshakes, or handshakes themselves by different methods like starting rogue duplicated AP or sending deauthentication frames directly, etc...
 
-Obviously cracking is not part of this project, as ESP32 is not sufficient to crack hashes in effective way. The rest can be done on this small, cheap, low-power SoC.
+Obviously cracking is not part of this project, as ESP32 is not sufficient to crack hashes in effective way. The rest can be done on this small, cheap, low-power SoC.</p>
 
 <p align="center">
     <img src="doc/images/logo.png" alt="Logo">
@@ -21,16 +21,19 @@ Obviously cracking is not part of this project, as ESP32 is not sufficient to cr
 - And more...
 
 ### Demo video
+
 [![Demonstration Youtube video](https://img.youtube.com/vi/9I3BxRu86GE/0.jpg)](https://www.youtube.com/watch?v=9I3BxRu86GE)
 
 
 ## Usage
+
 1. [Build](#Build) and [flash](#Flash) project onto ESP32 (DevKit or module)
-1. Power ESP32
-1. Management AP is started automatically after boot
-1. Connect to this AP\
-By default: 
-*SSID:* `ManagementAP` and *password:* `mgmtadmin`
+2. Power ESP32
+3. Management AP is started automatically after boot
+4. Connect to the Wi-Fi
+   
+*Wi-Fi SSID:* `ManagementAP` and *Password:* `mgmtadmin`
+
 1. In browser open `192.168.4.1` and you should see a web client to configure and control tool like this:
 
     ![Web client UI](doc/images/ui-config.png)
@@ -51,15 +54,39 @@ If you have setup ESP-IDF, the easiest way is to use `idf.py flash`.
 
 In case you don't want to setup whole ESP-IDF, you can use pre-build binaries included in [`build/`](build/) and flash them using [`esptool.py`](https://github.com/espressif/esptool) (requires Python).
 
-Example command (follow instructions in [esptool repo](https://github.com/espressif/esptool)):
-```
-esptool.py -p /dev/ttyS5 -b 115200 --after hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size detect 0x8000 build/partition_table/partition-table.bin 0x1000 build/bootloader/bootloader.bin 0x10000 build/esp32-wifi-penetration-tool.bin
-```
+* Example command (follow instructions in [esptool repo](https://github.com/espressif/esptool)):
 
-On Windows you can use official [Flash Download Tool](https://www.espressif.com/en/support/download/other-tools).
+      sudo apt update
+      sudo apt install esptool
+ 
+* Install from Repo:
+  ```
+  wget http://ftp.de.debian.org/debian/pool/main/e/esptool/esptool_2.8+dfsg-1_all.deb
+  
+  cd Downloads
+
+  sudo dpkg -i esptool_2.8+dfsg-1_all.deb
+  
+* Fix Missing Dependencies:
+  ```
+  sudo apt --fix-broken install -f -y
+  ```
+  ```
+  esptool -b 115200 --after hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size detect 0x8000 build/partition_table/partition-table.bin 
+  0x1000 build/bootloader/bootloader.bin 0x10000 build/esp32-wifi-penetration-tool.bin
+  ```
+
+On Windows you can Download [Flash Download Tool](https://www.espressif.com/en/support/download/other-tools)
+
+* Choose `ESP32` only
+* Boot Partiton `0x1000`
+* Partition Table `0x8000`
+* ESP32 Partition `0x10000`
+  
 
 ## Documentation
-### Wi-Fi attacks
+
+* Wi-Fi attacks
 Attacks implementations in this project are described in [main component README](main/). Theory behind these attacks is located in [doc/ATTACKS_THEORY.md](doc/ATTACKS_THEORY.md)
 ### API reference
 This project uses Doxygen notation for documenting components API and implementation. Doxyfile is included so if you want to generate API reference, just run `doxygen` from root directory. It will generate HTML API reference into `doc/api/html`.
