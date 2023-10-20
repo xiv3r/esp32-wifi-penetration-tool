@@ -42,16 +42,22 @@ Obviously cracking is not part of this project, as ESP32 is not sufficient to cr
   </p>
 
 
-#### Bruteforce with: [HCCAPX Bruteforce](https://github.com/xiv3r/esp32-wifi-penetration-tool/raw/master/HCCAPX%20Bruteforce.apk) & [Wordlist](https://github.com/xiv3r/esp32-wifi-penetration-tool/releases/download/Wordlists/rockyou.txt)
+#### Bruteforce Using Android: [HCCAPX Bruteforce](https://github.com/xiv3r/esp32-wifi-penetration-tool/raw/master/HCCAPX%20Bruteforce.apk) & [Wordlist](https://github.com/xiv3r/esp32-wifi-penetration-tool/releases/download/Wordlists/rockyou.txt)
 
 https://github.com/xiv3r/esp32-wifi-penetration-tool/assets/117867334/717b7602-d552-4e01-9f23-acff19464ffd
 
 
 BruteForce .hccapx using Windows [Hash Suite Droid](https://hashsuite.openwall.net/downloads/Hash_Suite_Free_3_7.zip)
 
-BruteForce .hccapx using Linux: 
+* Linux:
 
+###### Aircrack-ng
     aircrack-ng (directory)/handshake.hccapx -w (director)/Downloads/rockyou.txt
+
+###### Hashcat
+    hashcat -m 2500 (directory)/handshake.hccapx (directory)/rockyou.txt
+
+
 
 
 ## Usage
