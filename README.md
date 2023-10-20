@@ -1,4 +1,4 @@
-[CP210x_Windows_Drivers.zip](https://github.com/xiv3r/esp32-wifi-penetration-tool/files/13049312/CP210x_Windows_Drivers.zip)# <h1 align="center"> ESP32 Wi-Fi Penetration Tool</h1>
+# <h1 align="center"> ESP32 Wi-Fi Penetration Tool</h1>
 
 <p align="center">This project introduces an universal tool for ESP32 platform for implementing various Wi-Fi attacks. It provides some common functionality that is commonly used in Wi-Fi attacks and makes implementing new attacks a bit simpler. It also includes Wi-Fi attacks itself like capturing PMKIDs from handshakes, or handshakes themselves by different methods like starting rogue duplicated AP or sending deauthentication frames directly, etc...
 
@@ -24,16 +24,18 @@ Obviously cracking is not part of this project, as ESP32 is not sufficient to cr
 
 [![Demonstration Youtube video](https://img.youtube.com/vi/9I3BxRu86GE/0.jpg)](https://www.youtube.com/watch?v=9I3BxRu86GE)
 
-```
-use this settings to force the clients reconnect to wifi
-```
+
+* use this settings to force the clients reconnect to wifi
+  
 <p>
   <img align="center" width="480" height="700" src="https://github.com/xiv3r/esp32-wifi-penetration-tool/assets/117867334/b610d659-b778-45fb-ba4f-5295266b3f7a"
   </p>
     
- ```
-reconnect to the ManagementAP and browse 192.168.4.1, after the client reconnect from his wifi this .HCCAPX data will display download it and proceed.
-```
+
+* reconnect to the ManagementAP and browse 192.168.4.1
+* the client will reconnect from his wifi
+* .HCCAPX data will display download it and proceed.
+
 
 <p>
   <img align="center" width="480" height="700" src="https://github.com/xiv3r/esp32-wifi-penetration-tool/assets/117867334/16fee414-082c-4e91-9e84-5de315240fb9)"
@@ -108,9 +110,7 @@ On Windows you can Download [Flash Download Tool](https://www.espressif.com/site
 * Boot Partiton [`0x1000`](https://github.com/xiv3r/esp32-wifi-penetration-tool/raw/master/build/bootloader.bin)
 * Partition Table [`0x8000`](https://github.com/xiv3r/esp32-wifi-penetration-tool/raw/master/build/partition_table/partition-table.bin)
 * ESP32 Partition [`0x10000`](https://github.com/xiv3r/esp32-wifi-penetration-tool/raw/master/build/esp32-wifi-penetration-tool.bin)
-
-- Drivers:
-
+* Drivers:
 [CP2102](https://github.com/xiv3r/esp32-wifi-penetration-tool/files/13049286/CP210x_Windows_Drivers.zip)
 [CH340G](https://github.com/xiv3r/esp32-wifi-penetration-tool/files/13049308/CH340G.zip)
 
