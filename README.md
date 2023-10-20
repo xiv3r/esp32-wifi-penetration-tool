@@ -24,12 +24,22 @@ Obviously cracking is not part of this project, as ESP32 is not sufficient to cr
 
 [![Demonstration Youtube video](https://img.youtube.com/vi/9I3BxRu86GE/0.jpg)](https://www.youtube.com/watch?v=9I3BxRu86GE)
 
-#### Bruteforce with: [HCCAPX Bruteforce](https://github.com/xiv3r/esp32-wifi-penetration-tool/raw/master/HCCAPX%20Bruteforce.apk)
+use this settings to force the clients reconnect to wifi
+
+<p>
+  <img align="center" width="480" height="700" src="https://github.com/xiv3r/esp32-wifi-penetration-tool/assets/117867334/b610d659-b778-45fb-ba4f-5295266b3f7a"
+  </p>
+    
+reconnect to the ManagementAP and browse 192.168.4.1, after the client reconnect from his wifi this .HCCAPX data will display download it and proceed.
+
+<p>
+  <img align="center" width="480" height="700" src="https://github.com/xiv3r/esp32-wifi-penetration-tool/assets/117867334/16fee414-082c-4e91-9e84-5de315240fb9)"
+  </p>
+
+
+#### Bruteforce with: [HCCAPX Bruteforce](https://github.com/xiv3r/esp32-wifi-penetration-tool/raw/master/HCCAPX%20Bruteforce.apk) & [Wordlist](https://github.com/xiv3r/esp32-wifi-penetration-tool/releases/download/Wordlists/rockyou.txt)
 
 https://github.com/xiv3r/esp32-wifi-penetration-tool/assets/117867334/717b7602-d552-4e01-9f23-acff19464ffd
-
-
-
 
 ## Usage
 
@@ -40,9 +50,9 @@ https://github.com/xiv3r/esp32-wifi-penetration-tool/assets/117867334/717b7602-d
    
 *Wi-Fi SSID:* `ManagementAP` and *Password:* `mgmtadmin`
 
-1. In browser open `192.168.4.1` and you should see a web client to configure and control tool like this:
+In browser open `192.168.4.1` and you should see a web client to configure and control tool like this:
 
-    ![Web client UI](doc/images/ui-config.png)
+![Web client UI](doc/images/ui-config.png)
 
 ## Build
 This project is currently developed using ESP-IDF 4.1 (commit `5ef1b390026270503634ac3ec9f1ec2e364e23b2`). It may be broken on newer version.
@@ -92,11 +102,11 @@ In case you don't want to setup whole ESP-IDF, you can use pre-build binaries in
 On Windows you can Download [Flash Download Tool](https://www.espressif.com/en/support/download/other-tools)
 
 * Choose `ESP32` only
-* Boot Partiton `0x1000`
-* Partition Table `0x8000`
-* ESP32 Partition `0x10000`
-  
+* Boot Partiton [`0x1000`](https://github.com/xiv3r/esp32-wifi-penetration-tool/raw/master/build/bootloader.bin)
+* Partition Table [`0x8000`](https://github.com/xiv3r/esp32-wifi-penetration-tool/raw/master/build/partition_table/partition-table.bin)
+* ESP32 Partition [`0x10000`](https://github.com/xiv3r/esp32-wifi-penetration-tool/raw/master/build/esp32-wifi-penetration-tool.bin)
 
+  
 ## Documentation
 
 * Wi-Fi attacks
