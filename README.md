@@ -103,16 +103,18 @@ In case you don't want to setup whole ESP-IDF, you can use pre-build binaries in
   esptool -b 115200 --after hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size detect 0x8000 build/partition_table/partition-table.bin 
   0x1000 build/bootloader/bootloader.bin 0x10000 build/esp32-wifi-penetration-tool.bin
   ```
+![Screenshot_20231020_104352](https://github.com/xiv3r/esp32-wifi-penetration-tool/assets/117867334/4def4b5e-7c76-4544-b8f2-d757b14b2f96)
+
 
 On Windows you can Download [Flash Download Tool](https://www.espressif.com/sites/default/files/tools/flash_download_tool_3.9.5.zip)
 
-* Choose `ESP32` only
-* Boot Partiton [`0x1000`](https://github.com/xiv3r/esp32-wifi-penetration-tool/raw/master/build/bootloader.bin)
-* Partition Table [`0x8000`](https://github.com/xiv3r/esp32-wifi-penetration-tool/raw/master/build/partition_table/partition-table.bin)
-* ESP32 Partition [`0x10000`](https://github.com/xiv3r/esp32-wifi-penetration-tool/raw/master/build/esp32-wifi-penetration-tool.bin)
+* ###### Choose `ESP32` only
+* ###### Boot Partiton [`0x1000`](https://github.com/xiv3r/esp32-wifi-penetration-tool/raw/master/build/bootloader.bin)
+* ###### Partition Table [`0x8000`](https://github.com/xiv3r/esp32-wifi-penetration-tool/raw/master/build/partition_table/partition-table.bin)
+* ###### ESP32 Partition [`0x10000`](https://github.com/xiv3r/esp32-wifi-penetration-tool/raw/master/build/esp32-wifi-penetration-tool.bin)
 * Drivers:
-[CP2102](https://github.com/xiv3r/esp32-wifi-penetration-tool/files/13049286/CP210x_Windows_Drivers.zip)
-[CH340G](https://github.com/xiv3r/esp32-wifi-penetration-tool/files/13049308/CH340G.zip)
+##### [CP2102](https://github.com/xiv3r/esp32-wifi-penetration-tool/files/13049286/CP210x_Windows_Drivers.zip)
+##### [CH340G](https://github.com/xiv3r/esp32-wifi-penetration-tool/files/13049308/CH340G.zip)
 
 
 <p>
