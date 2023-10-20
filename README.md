@@ -24,13 +24,16 @@ Obviously cracking is not part of this project, as ESP32 is not sufficient to cr
 
 [![Demonstration Youtube video](https://img.youtube.com/vi/9I3BxRu86GE/0.jpg)](https://www.youtube.com/watch?v=9I3BxRu86GE)
 
+```
 use this settings to force the clients reconnect to wifi
-
+```
 <p>
   <img align="center" width="480" height="700" src="https://github.com/xiv3r/esp32-wifi-penetration-tool/assets/117867334/b610d659-b778-45fb-ba4f-5295266b3f7a"
   </p>
     
+ ```
 reconnect to the ManagementAP and browse 192.168.4.1, after the client reconnect from his wifi this .HCCAPX data will display download it and proceed.
+```
 
 <p>
   <img align="center" width="480" height="700" src="https://github.com/xiv3r/esp32-wifi-penetration-tool/assets/117867334/16fee414-082c-4e91-9e84-5de315240fb9)"
@@ -99,7 +102,7 @@ In case you don't want to setup whole ESP-IDF, you can use pre-build binaries in
   0x1000 build/bootloader/bootloader.bin 0x10000 build/esp32-wifi-penetration-tool.bin
   ```
 
-On Windows you can Download [Flash Download Tool](https://www.espressif.com/en/support/download/other-tools)
+On Windows you can Download [Flash Download Tool](https://www.espressif.com/sites/default/files/tools/flash_download_tool_3.9.5.zip)
 
 * Choose `ESP32` only
 * Boot Partiton [`0x1000`](https://github.com/xiv3r/esp32-wifi-penetration-tool/raw/master/build/bootloader.bin)
