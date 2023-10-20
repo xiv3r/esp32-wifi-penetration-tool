@@ -1,4 +1,4 @@
-# <h1 align="center"> ESP32 Wi-Fi Penetration Tool</h1>
+[CP210x_Windows_Drivers.zip](https://github.com/xiv3r/esp32-wifi-penetration-tool/files/13049312/CP210x_Windows_Drivers.zip)# <h1 align="center"> ESP32 Wi-Fi Penetration Tool</h1>
 
 <p align="center">This project introduces an universal tool for ESP32 platform for implementing various Wi-Fi attacks. It provides some common functionality that is commonly used in Wi-Fi attacks and makes implementing new attacks a bit simpler. It also includes Wi-Fi attacks itself like capturing PMKIDs from handshakes, or handshakes themselves by different methods like starting rogue duplicated AP or sending deauthentication frames directly, etc...
 
@@ -109,7 +109,17 @@ On Windows you can Download [Flash Download Tool](https://www.espressif.com/site
 * Partition Table [`0x8000`](https://github.com/xiv3r/esp32-wifi-penetration-tool/raw/master/build/partition_table/partition-table.bin)
 * ESP32 Partition [`0x10000`](https://github.com/xiv3r/esp32-wifi-penetration-tool/raw/master/build/esp32-wifi-penetration-tool.bin)
 
-  
+- Drivers:
+
+[CP2102](https://github.com/xiv3r/esp32-wifi-penetration-tool/files/13049286/CP210x_Windows_Drivers.zip)
+[CH340G](https://github.com/xiv3r/esp32-wifi-penetration-tool/files/13049308/CH340G.zip)
+
+
+<p>
+  <img align="center" height="700" src="https://github.com/xiv3r/esp32-wifi-penetration-tool/assets/117867334/d1a15e2c-b50f-4473-8069-2bdf5bd43776"
+ </p>
+
+
 ## Documentation
 
 * Wi-Fi attacks
