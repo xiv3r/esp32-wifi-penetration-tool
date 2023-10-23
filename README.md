@@ -54,10 +54,6 @@ BruteForce .hccapx using Windows [Hash Suite Droid](https://hashsuite.openwall.n
 ###### Aircrack-ng
     aircrack-ng (directory)/handshake.hccapx -w (director)/Downloads/rockyou.txt
 
-###### Hashcat
-    hashcat -m 2500 (directory)/handshake.hccapx (directory)/rockyou.txt
-
-
 
 
 ## Usage
