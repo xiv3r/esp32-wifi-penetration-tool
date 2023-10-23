@@ -49,10 +49,9 @@ https://github.com/xiv3r/esp32-wifi-penetration-tool/assets/117867334/717b7602-d
 
 BruteForce .hccapx using Windows [Hash Suite Droid](https://hashsuite.openwall.net/downloads/Hash_Suite_Free_3_7.zip)
 
-* Linux:
+###### Aircrack-ng:
 
-###### Aircrack-ng
-    aircrack-ng (directory)/handshake.hccapx -w (director)/Downloads/rockyou.txt
+    sudo aircrack-ng /(directory)/handshake.hccapx -w /(director)/Downloads/rockyou.txt
 
 
 
